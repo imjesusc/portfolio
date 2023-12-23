@@ -2,7 +2,7 @@
 
 ## Preview
 
-![Portfolio Preview](https://portfolio-ng8xwt1jy-iamjesusc.vercel.app/)
+[Portfolio Preview](https://portfolio-ng8xwt1jy-iamjesusc.vercel.app/)
 
 ## About
 
