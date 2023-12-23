@@ -24,7 +24,7 @@ This project was built using these technologies.
 
 ### Sketch
 
-<div style="display: grid; grid-template-columns: 2fr 1fr;">
+<div style="width: 100%; display: grid; grid-template-columns: 2fr 1fr;">
   <img class="width" src="./public/sketch.png" />
   <img class="width" src="./public/sketch-movile.png" />
 </div>
@@ -64,8 +64,8 @@ Open [http://localhost:3000](http://localhost:5173) to view it in the browser. T
 
 ## Deploy in Vercel
 
-> _[!IMPORTANT]_
-> Added Vercel token to GitHub.
+> [!IMPORTANT]  
+> Added Vercel token to GitHub secret actions.
 
 ```bash
 # Deploy
