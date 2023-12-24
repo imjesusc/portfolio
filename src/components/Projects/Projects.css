@@ -1,0 +1,15 @@
+.main__projects {
+  width: 100%;
+  display: grid;
+  gap: 2.4rem;
+}
+
+.main__projects--title {
+  font-size: 4rem;
+}
+
+.main__projects--list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
