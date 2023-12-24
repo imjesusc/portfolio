@@ -28,11 +28,9 @@ This is my personal portfolio.
 
 ## Development
 
-1. Flowchart
+1. **Flowchart**  
    ![FlowChart](./public/flowchard.png)
 
-2. Sketches
-<div style="width: 100%; display: grid; grid-template-columns: 2fr 1fr;">
-  <img width="90%" src="./public/sketch.png" />
-  <img class="width" src="./public/sketch-movile.png" />
-</div>
+2. **Sketches**
+   <img width="60%" src="./public/sketch.png" />
+   <img width="30%" src="./public/sketch-movile.png" />

@@ -28,9 +28,9 @@ Este es mi portafolio de personal.
 
 ## Desarrollo
 
-1. **Diagrama de flujo**
+1. **Diagrama de flujo**  
    ![FlowChart](./public/flowchard.png)
 
 2. **Bocetos**  
-   <img width="60%" height="500px"  src="./public/sketch.png" />
-   <img width="30%" height="500px" src="./public/sketch-movile.png" />
+   <img width="60%" src="./public/sketch.png" />
+   <img width="30%" src="./public/sketch-movile.png" />
