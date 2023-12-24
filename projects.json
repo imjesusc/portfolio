@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Clone de Tesla",
-      "img": "./public/card.webp",
+      "img": "./card.webp",
       "path": "https://github.com/Portfolio-Website/Portfolio-Website",
       "description": "Portfolio website created using React and Vite",
       "repo": "https://github.com/Portfolio-Website/Portfolio-Website",
@@ -12,7 +12,7 @@
     {
       "id": "3",
       "name": "Get Ip Info",
-      "img": "./public/card.webp",
+      "img": "./card.webp",
       "path": "https://github.com/Portfolio-Website/Portfolio-Website",
       "description": "Portfolio website created using React and Vite",
       "repo": "https://github.com/Portfolio-Website/Portfolio-Website",
@@ -21,7 +21,7 @@
     {
       "id": "2",
       "name": "Encriptador de texto",
-      "img": "./public/card.webp",
+      "img": "./card.webp",
       "path": "https://github.com/Portfolio-Website/Portfolio-Website",
       "description": "Portfolio website created using React and Vite",
       "repo": "https://github.com/Portfolio-Website/Portfolio-Website",
