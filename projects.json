@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "Clone de Tesla",
+      "img": "./src/assets/card.webp",
+      "path": "https://github.com/Portfolio-Website/Portfolio-Website",
+      "description": "Portfolio website created using React and Vite",
+      "repo": "https://github.com/Portfolio-Website/Portfolio-Website",
+      "tecnologies": ["React", "Vite", "Tailwind"]
+    },
+    {
+      "id": "3",
+      "name": "Get Ip Info",
+      "img": "./src/assets/card.webp",
+      "path": "https://github.com/Portfolio-Website/Portfolio-Website",
+      "description": "Portfolio website created using React and Vite",
+      "repo": "https://github.com/Portfolio-Website/Portfolio-Website",
+      "tecnologies": ["React", "Vite", "Tailwind"]
+    },
+    {
+      "id": "2",
+      "name": "Encriptador de texto",
+      "img": "./src/assets/card.webp",
+      "path": "https://github.com/Portfolio-Website/Portfolio-Website",
+      "description": "Portfolio website created using React and Vite",
+      "repo": "https://github.com/Portfolio-Website/Portfolio-Website",
+      "tecnologies": ["React", "Vite", "Tailwind"]
+    }
+  ]
+}

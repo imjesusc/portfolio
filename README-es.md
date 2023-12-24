@@ -1,6 +1,6 @@
 <h1 style="text-align: center;">Portfolio</h1>
 
-[Watch live](https://portfolio-ng8xwt1jy-iamjesusc.vercel.app/)
+[Watch live](https://repo-delta-ruddy.vercel.app/)
 
 ## Introducción
 
@@ -31,6 +31,6 @@ Este es mi portafolio de personal.
 1. **Diagrama de flujo**  
    ![FlowChart](./public/flowchard.png)
 
-2. **Bocetos**  
+2. **Bocetos**
    <img width="60%" src="./public/sketch.png" />
    <img width="30%" src="./public/sketch-movile.png" />
