@@ -1,20 +1,17 @@
 .main-header {
   width: 100%;
-  min-height: 60vh;
+  min-height: 57vh;
   display: grid;
   align-content: center;
-  justify-content: center;
   gap: 2.4rem;
 }
 
 .main-header-title {
   font-size: 9.6rem;
-  text-align: center;
   margin: 0;
 }
 
 .main-header-info {
-  text-align: center;
   font-size: 2.4rem;
   color: var(--color-accent-light);
 }
