@@ -1,17 +1,14 @@
 .main-header {
   width: 100%;
-  min-height: 57vh;
   display: grid;
   align-content: center;
   gap: 2.4rem;
-}
-
-.main-header-title {
-  font-size: 9.6rem;
-  margin: 0;
+  max-width: var(--max-screen-width);
+  margin: auto;
+  margin-top: 20vh;
 }
 
 .main-header-info {
-  font-size: 2rem;
+  font-size: var(--text-s-primary);
   color: var(--color-accent-light);
 }

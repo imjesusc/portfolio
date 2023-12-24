@@ -1,13 +1,13 @@
+import { Title } from '../ui/atoms/title/Title'
 import { ProjectCard } from '../ui/molecules/project-card/Project-card'
 import './Projects.css'
 
-export const Projects = (props) => {
-  const { projects } = props
+export const Projects = ({ projects }) => {
   return (
     <section className="main__projects">
-      <h2 className="main__projects--title">Mis proyectos</h2>
+      <Title tagTitle="h2" title="Mis proyectos" />
       <div className="main__projects--list">
-        {projects && projects.map((projects) => <ProjectCard key={projects.id} project={projects} />)}
+        {projects && projects.map((project) => <ProjectCard key={project.id} project={project} />)}
       </div>
     </section>
   )

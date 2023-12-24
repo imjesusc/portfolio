@@ -2,6 +2,8 @@
   width: 100%;
   display: grid;
   gap: 2.4rem;
+  max-width: var(--max-screen-width);
+  margin: auto;
 }
 
 .main__projects--title {

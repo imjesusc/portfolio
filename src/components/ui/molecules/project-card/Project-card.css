@@ -17,4 +17,5 @@
 
 .project__card--title {
   margin: 0.5rem 0;
+  font-size: var(--text-s-default);
 }
