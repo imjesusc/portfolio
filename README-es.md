@@ -31,6 +31,6 @@ Este es mi portafolio de personal.
 1. **Diagrama de flujo**  
    ![FlowChart](./public/flowchard.png)
 
-2. **Bocetos**
+2. **Bocetos**  
    <img width="60%" src="./public/sketch.png" />
    <img width="30%" src="./public/sketch-movile.png" />

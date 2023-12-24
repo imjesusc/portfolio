@@ -27,5 +27,97 @@
       "repo": "https://github.com/Portfolio-Website/Portfolio-Website",
       "tecnologies": ["React", "Vite", "Tailwind"]
     }
+  ],
+  "crafts": [
+    {
+      "id": "1",
+      "name": "Calculadora React",
+      "img": "./card.webp",
+      "path": "https://github.com/TuUsuario/CalculadoraReact",
+      "description": "Una calculadora implementada en React para realizar operaciones matemáticas básicas.",
+      "repo": "https://github.com/TuUsuario/CalculadoraReact",
+      "technologies": ["React", "JavaScript", "CSS"]
+    },
+    {
+      "id": "2",
+      "name": "Lista de Tareas Angular",
+      "img": "./card.webp",
+      "path": "https://github.com/TuUsuario/ListaTareasAngular",
+      "description": "Una aplicación de lista de tareas construida con Angular para organizar tus actividades diarias.",
+      "repo": "https://github.com/TuUsuario/ListaTareasAngular",
+      "technologies": ["Angular", "TypeScript", "Bootstrap"]
+    },
+    {
+      "id": "3",
+      "name": "Galería de Imágenes Vue",
+      "img": "./card.webp",
+      "path": "https://github.com/TuUsuario/GaleriaImagenesVue",
+      "description": "Una galería de imágenes desarrollada en Vue.js para mostrar y navegar a través de fotos.",
+      "repo": "https://github.com/TuUsuario/GaleriaImagenesVue",
+      "technologies": ["Vue.js", "JavaScript", "SCSS"]
+    },
+    {
+      "id": "4",
+      "name": "Formulario React Native",
+      "img": "./card.webp",
+      "path": "https://github.com/TuUsuario/FormularioReactNative",
+      "description": "Un formulario móvil desarrollado con React Native para capturar datos del usuario.",
+      "repo": "https://github.com/TuUsuario/FormularioReactNative",
+      "technologies": ["React Native", "JavaScript", "Expo"]
+    },
+    {
+      "id": "5",
+      "name": "Blog con Gatsby",
+      "img": "./card.webp",
+      "path": "https://github.com/TuUsuario/BlogConGatsby",
+      "description": "Un blog estático creado con Gatsby para compartir contenido de manera eficiente.",
+      "repo": "https://github.com/TuUsuario/BlogConGatsby",
+      "technologies": ["Gatsby", "React", "GraphQL"]
+    },
+    {
+      "id": "6",
+      "name": "Reloj Digital JavaScript",
+      "img": "./card.webp",
+      "path": "https://github.com/TuUsuario/RelojDigitalJS",
+      "description": "Un reloj digital simple construido con JavaScript para mostrar la hora actual.",
+      "repo": "https://github.com/TuUsuario/RelojDigitalJS",
+      "technologies": ["JavaScript", "HTML", "CSS"]
+    },
+    {
+      "id": "7",
+      "name": "Mapa Interactivo Leaflet",
+      "img": "./card.webp",
+      "path": "https://github.com/TuUsuario/MapaInteractivoLeaflet",
+      "description": "Un mapa interactivo creado con Leaflet para explorar ubicaciones geográficas.",
+      "repo": "https://github.com/TuUsuario/MapaInteractivoLeaflet",
+      "technologies": ["Leaflet", "JavaScript", "HTML"]
+    },
+    {
+      "id": "8",
+      "name": "Cronómetro con React Hooks",
+      "img": "./card.webp",
+      "path": "https://github.com/TuUsuario/CronometroReactHooks",
+      "description": "Un cronómetro implementado con React Hooks para medir el tiempo.",
+      "repo": "https://github.com/TuUsuario/CronometroReactHooks",
+      "technologies": ["React", "JavaScript", "CSS"]
+    },
+    {
+      "id": "9",
+      "name": "Juego de Memoria en Vue",
+      "img": "./card.webp",
+      "path": "https://github.com/TuUsuario/JuegoMemoriaVue",
+      "description": "Un juego de memoria desarrollado en Vue.js para ejercitar la concentración.",
+      "repo": "https://github.com/TuUsuario/JuegoMemoriaVue",
+      "technologies": ["Vue.js", "JavaScript", "SCSS"]
+    },
+    {
+      "id": "10",
+      "name": "Sistema de Autenticación React Native",
+      "img": "./card.webp",
+      "path": "https://github.com/TuUsuario/AutenticacionReactNative",
+      "description": "Un sistema de autenticación móvil construido con React Native y Firebase.",
+      "repo": "https://github.com/TuUsuario/AutenticacionReactNative",
+      "technologies": ["React Native", "Firebase", "Expo"]
+    }
   ]
 }

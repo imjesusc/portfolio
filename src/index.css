@@ -11,6 +11,11 @@
   --color-accent-light: #666666;
 
   --max-screen-width: 1280px;
+  --text-s-primary: 2rem;
+  --text-s-title: 9.6rem;
+  --text-s-subtitle: 4rem;
+  --text-s-tertiary: 2.5rem;
+  --text-s-default: 1.6rem;
 }
 
 html {
@@ -25,8 +30,10 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: var(--text-s-default);
   color: var(--color-base);
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 ul,

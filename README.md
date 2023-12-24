@@ -31,6 +31,6 @@ This is my personal portfolio.
 1. **Flowchart**  
    ![FlowChart](./public/flowchard.png)
 
-2. **Sketches**
+2. **Sketches**  
    <img width="60%" src="./public/sketch.png" />
    <img width="30%" src="./public/sketch-movile.png" />

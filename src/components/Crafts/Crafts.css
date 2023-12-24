@@ -1,0 +1,14 @@
+.main__craft {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  display: grid;
+  gap: 2.4rem;
+}
+
+.main__craft--title {
+  max-width: var(--max-screen-width);
+  margin: auto;
+  width: 100%;
+}
