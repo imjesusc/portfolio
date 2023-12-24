@@ -1,4 +1,4 @@
-import { ProjectCard } from '../ui/molecules/Project-card'
+import { ProjectCard } from '../ui/molecules/project-card/Project-card'
 import './Projects.css'
 
 export const Projects = (props) => {
