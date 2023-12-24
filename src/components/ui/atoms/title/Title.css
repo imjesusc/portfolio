@@ -1,0 +1,14 @@
+.title {
+  font-size: var(--text-s-title);
+  margin: 0;
+}
+
+.title--secondary {
+  font-size: var(--text-s-subtitle);
+  margin: 0;
+}
+
+.title--tertiary {
+  font-size: var(--text-s-tertiary);
+  margin: 0;
+}
