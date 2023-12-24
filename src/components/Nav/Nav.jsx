@@ -5,12 +5,12 @@ export const Nav = () => {
     <nav className="nav">
       <ul className="nav__list">
         <li className="nav__item">
-          <a href="https://github.com/imjesusc">
+          <a href="https://github.com/imjesusc" title="Github">
             <IconBrandGithubFilled className="icon" />
           </a>
         </li>
         <li className="nav__item">
-          <a href="https://www.linkedin.com/in/iamjesusc/">
+          <a href="https://www.linkedin.com/in/iamjesusc/" title="Linkedin">
             <IconBrandLinkedin className="icon" />
           </a>
         </li>
