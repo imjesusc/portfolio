@@ -54,5 +54,17 @@
     { "id": "3", "name": "Tailwind", "color": "#dbdbdb" },
     { "id": "4", "name": "CSS", "color": "#f4f4f4" },
     { "id": "5", "name": "HTML", "color": "#262626" }
+  ],
+  "redes": [
+    {
+      "id": "1",
+      "name": "GitHub",
+      "url": "https://github.com/imjesusc"
+    },
+    {
+      "id": "2",
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/imjesusc/"
+    }
   ]
 }

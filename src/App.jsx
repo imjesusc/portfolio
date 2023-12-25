@@ -2,7 +2,7 @@ import './App.css'
 import { Header } from './components/Header/Header'
 import { Nav } from './components/Nav/Nav'
 import { Projects } from './components/Projects/Projects'
-import { projects, crafts, skills } from '../projects.json'
+import { projects, crafts, skills, redes } from '../projects.json'
 import { Crafts } from './components/Crafts/Crafts'
 import { Skills } from './components/Skills/Skills'
 import { Footer } from './components/Footer/Footer'
@@ -23,7 +23,7 @@ function App() {
 
         <Skills skills={skills} />
 
-        <Footer />
+        <Footer info={redes} />
       </main>
     </div>
   )
