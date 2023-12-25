@@ -1,6 +1,7 @@
 import './Skills.css'
 import { Title } from '../ui/atoms/title/Title'
 import { BookSkill } from '../ui/atoms/book-skill/Book-skill'
+import PropTypes from 'prop-types'
 export const Skills = ({ skills }) => {
   return (
     <section className="main__skills">
@@ -10,4 +11,8 @@ export const Skills = ({ skills }) => {
       </div>
     </section>
   )
+}
+
+Skills.propTypes = {
+  skills: PropTypes.array.isRequired,
 }

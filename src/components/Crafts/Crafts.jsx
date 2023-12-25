@@ -1,7 +1,7 @@
-import React from 'react'
 import './Crafts.css'
 import { Title } from '../ui/atoms/title/Title'
 import { Slider } from '../ui/molecules/slider/Slider'
+import PropTypes from 'prop-types'
 
 export const Crafts = ({ crafts }) => {
   return (
@@ -10,4 +10,8 @@ export const Crafts = ({ crafts }) => {
       <Slider crafts={crafts} />
     </section>
   )
+}
+
+Crafts.propTypes = {
+  crafts: PropTypes.array.isRequired,
 }

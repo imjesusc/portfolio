@@ -1,6 +1,7 @@
 import './Slider.css'
 import { useEffect, useRef } from 'react'
 import { SliderCard } from '../../atoms/slider-card/Slider-card'
+import PropTypes from 'prop-types'
 
 export const Slider = ({ crafts }) => {
   const sliderContainer = useRef(null)
@@ -34,4 +35,8 @@ export const Slider = ({ crafts }) => {
       </ul>
     </div>
   )
+}
+
+Slider.propTypes = {
+  crafts: PropTypes.array.isRequired,
 }

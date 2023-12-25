@@ -1,4 +1,3 @@
-import React from 'react'
 import './Book-skill.css'
 import {
   IconBrandCss3,
@@ -8,6 +7,7 @@ import {
   IconBrandTailwind,
 } from '@tabler/icons-react'
 import { Title } from '../title/Title'
+import PropTypes from 'prop-types'
 
 export const BookSkill = ({ name, color }) => {
   const iconSkills = [
@@ -34,4 +34,9 @@ export const BookSkill = ({ name, color }) => {
       <div className="book__shadow" style={{ '--book-color': color }}></div>
     </div>
   )
+}
+
+BookSkill.propTypes = {
+  name: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
 }

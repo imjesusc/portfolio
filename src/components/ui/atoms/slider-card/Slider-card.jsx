@@ -1,6 +1,6 @@
 import classNames from 'classnames'
-import React from 'react'
 import './Slider-card.css'
+import PropTypes from 'prop-types'
 
 export const SliderCard = ({ project, className }) => {
   return (
@@ -11,4 +11,9 @@ export const SliderCard = ({ project, className }) => {
       </figure>
     </article>
   )
+}
+
+SliderCard.propTypes = {
+  project: PropTypes.object,
+  className: PropTypes.string,
 }

@@ -2,6 +2,7 @@ import './Project-card.css'
 import { useState } from 'react'
 import { Modal } from '../modal/Modal'
 import classNames from 'classnames'
+import PropTypes from 'prop-types'
 export const ProjectCard = ({ project, className }) => {
   const [showModal, setShowModal] = useState(false)
   return (
@@ -14,4 +15,9 @@ export const ProjectCard = ({ project, className }) => {
       <Modal project={project} showModal={showModal} setShowModal={setShowModal} />
     </article>
   )
+}
+
+ProjectCard.propTypes = {
+  project: PropTypes.object.isRequerid,
+  className: PropTypes.string,
 }

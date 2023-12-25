@@ -2,9 +2,9 @@ import './Footer.css'
 import { IconBrandGithubFilled } from '@tabler/icons-react'
 import { IconBrandLinkedin } from '@tabler/icons-react'
 import { Title } from '../ui/atoms/title/Title'
+import PropTypes from 'prop-types'
 
-export const Footer = (props) => {
-  const { info } = props
+export const Footer = ({ info }) => {
   return (
     <footer className="footer">
       <div className="footer__container">
@@ -26,4 +26,8 @@ export const Footer = (props) => {
       </div>
     </footer>
   )
+}
+
+Footer.propTypes = {
+  info: PropTypes.array.isRequired,
 }
