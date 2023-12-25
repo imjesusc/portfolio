@@ -12,6 +12,11 @@ on:
 jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: 18.x
+
     steps:
       - uses: actions/checkout@v3
 
