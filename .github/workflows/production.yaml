@@ -7,13 +7,16 @@ env:
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 
 jobs:
   Deploy-production:
     runs-on: ubuntu-latest
     steps:
+      - name: Cancel Previous Rebundant Builds
+        uses: styfle/cancel-workflow-action@0.11.0
+        with:
+          access_token: ${{ github.token }}
+
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
