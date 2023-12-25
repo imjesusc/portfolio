@@ -5,6 +5,7 @@ import { Projects } from './components/Projects/Projects'
 import { projects, crafts, skills } from '../projects.json'
 import { Crafts } from './components/Crafts/Crafts'
 import { Skills } from './components/Skills/Skills'
+import { Footer } from './components/Footer/Footer'
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Crafts crafts={crafts} />
 
         <Skills skills={skills} />
+
+        <Footer />
       </main>
     </div>
   )
