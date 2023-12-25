@@ -2,6 +2,8 @@
 
 [Watch live](https://repo-delta-ruddy.vercel.app/)
 
+[![Vercel production deploy](https://github.com/imjesusc/portfolio/actions/workflows/production.yaml/badge.svg)](https://github.com/imjesusc/portfolio/actions/workflows/production.yaml)
+
 ## Introducción
 
 Este es mi portafolio de personal.
