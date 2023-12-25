@@ -47,5 +47,12 @@
       "repo": "https://github.com/TuUsuario/ListaTareasAngular",
       "technologies": ["Angular", "TypeScript", "Bootstrap"]
     }
+  ],
+  "skills": [
+    { "id": "1", "name": "React", "color": "#C6C6C6" },
+    { "id": "2", "name": "JavaScript", "color": "#343434" },
+    { "id": "3", "name": "Tailwind", "color": "#dbdbdb" },
+    { "id": "4", "name": "CSS", "color": "#f4f4f4" },
+    { "id": "5", "name": "HTML", "color": "#262626" }
   ]
 }

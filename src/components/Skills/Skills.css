@@ -1,0 +1,14 @@
+.main__skills {
+  max-width: var(--max-screen-width);
+  margin: auto;
+  display: grid;
+  gap: 2.4rem;
+  margin-bottom: 5rem;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 3.5rem;
+  width: 100%;
+}
