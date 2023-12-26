@@ -1,6 +1,14 @@
+:root {
+  --book-w-size: 24rem;
+  --book-h-size: 28rem;
+
+  --book-dk-w-size: 20rem;
+  --book-dk-h-size: 24rem;
+}
+
 .book {
-  width: 24rem;
-  height: 28rem;
+  width: var(--book-w-size);
+  height: var(--book-h-size);
   position: relative;
   overflow: hidden;
   border: 1px solid hsl(0, 0%, 92%);
@@ -79,30 +87,31 @@
 
 .book__pages {
   background: linear-gradient(90deg, #999 0, transparent 30%), linear-gradient(#fff, #fafafa);
-  height: calc(28rem - 2 * 3px);
+  height: calc(var(--book-h-size) - 2 * 3px);
   width: calc(5.6rem - 2px);
   top: 3px;
   left: 0;
   position: absolute;
   z-index: -10;
-  transform: translateX(calc(24rem - 5.6rem / 2 - 3px)) rotateY(90deg) translateX(calc(5.6rem / 2));
+  transform: translateX(calc(var(--book-w-size) - 5.6rem / 2 - 3px)) rotateY(90deg) translateX(calc(5.6rem / 2));
   transition: transform 0.6s ease;
   transform-style: preserve-3d;
 }
 
 .book-container:hover .book__pages {
-  height: calc(28rem - 2 * 3px);
+  height: calc(var(--book-h-size) - 2 * 3px);
   width: calc(5.6rem - 2px);
   top: 3px;
   position: absolute;
-  transform: translateX(calc(24rem - 5.6rem / 2 - 3px)) rotateY(73deg) translateX(calc(5.6rem / 2)) scale(1.066);
+  transform: translateX(calc(var(--book-w-size) - 5.6rem / 2 - 3px)) rotateY(73deg) translateX(calc(5.6rem / 2))
+    scale(1.066);
 }
 
 .book__shadow {
   position: absolute;
   left: 0;
-  width: 24rem;
-  height: 28rem;
+  width: var(--book-w-size);
+  height: var(--book-h-size);
   border-radius: 5.4px 1.8px 1.8px 5.4px;
   background: var(--book-color);
   transform: translateZ(calc(-1 * 5.6rem));
@@ -114,4 +123,32 @@
 
 .book-container:hover .book__shadow {
   transform: rotateY(-20deg) translateX(1rem);
+}
+
+@media only screen and (max-width: 1440px) {
+  .book {
+    width: var(--book-dk-w-size);
+    height: var(--book-dk-h-size);
+  }
+
+  .book-container {
+    perspective: 90rem;
+    max-width: 100%;
+  }
+
+  .book__pages {
+    height: calc(var(--book-dk-h-size) - 2 * 3px);
+    transform: translateX(calc(var(--book-dk-w-size) - 5.6rem / 2 - 3px)) rotateY(90deg) translateX(calc(5.6rem / 2));
+  }
+
+  .book-container:hover .book__pages {
+    height: calc(var(--book-dk-h-size) - 2 * 3px);
+    transform: translateX(calc(var(--book-dk-w-size) - 5.6rem / 2 - 3px)) rotateY(73deg) translateX(calc(5.6rem / 2))
+      scale(1.066);
+  }
+
+  .book__shadow {
+    width: var(--book-dk-w-size);
+    height: var(--book-dk-h-size);
+  }
 }
