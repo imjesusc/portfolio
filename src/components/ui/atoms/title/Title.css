@@ -1,17 +1,37 @@
-.title {
+.title__primary {
   font-size: var(--text-s-title);
   margin: 0;
   line-height: 1;
 }
 
-.title--secondary {
+.title__secondary {
   font-size: var(--text-s-subtitle);
   margin: 0;
   line-height: 1;
 }
 
-.title--tertiary {
+.title__tertiary {
   font-size: var(--text-s-tertiary);
   margin: 0;
   line-height: 1;
+}
+
+@media only screen and (max-width: 1440px) {
+  .title__primary {
+    font-size: var(--text-s-dk-title);
+    margin: 0;
+    line-height: 1;
+  }
+
+  .title__secondary {
+    font-size: var(--text-s-dk-subtitle);
+    margin: 0;
+    line-height: 1;
+  }
+
+  .title__tertiary {
+    font-size: var(--text-s-dk-tertiary);
+    margin: 0;
+    line-height: 1;
+  }
 }

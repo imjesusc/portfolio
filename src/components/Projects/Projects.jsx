@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 export const Projects = ({ projects }) => {
   return (
     <section className="main__projects">
-      <Title tagTitle="h2" title="Mis proyectos" />
+      <Title tagTitle="h2" title="Proyectos" typeTitle="secondary" />
       <div className="main__projects--list">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />

@@ -5,7 +5,8 @@ import PropTypes from 'prop-types'
 export const Skills = ({ skills }) => {
   return (
     <section className="main__skills">
-      <Title tagTitle="h2" title="Habilidades" />
+      <Title tagTitle="h2" title="Habilidades" typeTitle="secondary" />
+
       <div className="skill-container">
         {skills && skills.map((skill) => <BookSkill key={skill.id} name={skill.name} color={skill.color} />)}
       </div>

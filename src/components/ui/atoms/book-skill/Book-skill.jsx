@@ -26,7 +26,6 @@ export const BookSkill = ({ name, color }) => {
         <div className="book__mold "></div>
         <div className="book__covered">
           <Title tagTitle="h3" title={name} className="book__title" style={{ '--book-color': color }} />
-
           {skill.icon}
         </div>
       </article>

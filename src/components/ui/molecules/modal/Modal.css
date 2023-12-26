@@ -55,3 +55,9 @@
   justify-content: center;
   gap: 2.4rem;
 }
+
+@media only screen and (max-width: 1440px) {
+  .modal {
+    width: 42rem;
+  }
+}

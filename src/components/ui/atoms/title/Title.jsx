@@ -1,13 +1,10 @@
 import './Title.css'
-import classNames from 'classnames'
 import PropTypes from 'prop-types'
-export const Title = ({ tagTitle = '', title = '', className = '', style = {} }) => {
+import classNames from 'classnames'
+export const Title = ({ tagTitle, className, title, typeTitle, style }) => {
   const Tag = tagTitle || 'h2'
   return (
-    <Tag
-      className={classNames(Tag === 'h1' ? 'title' : Tag === 'h2' ? 'title--secondary' : 'title--tertiary', className)}
-      style={style}
-    >
+    <Tag className={classNames(`title__${typeTitle}`, className)} style={style}>
       {title}
     </Tag>
   )
@@ -16,6 +13,7 @@ export const Title = ({ tagTitle = '', title = '', className = '', style = {} })
 Title.propTypes = {
   tagTitle: PropTypes.string,
   title: PropTypes.string,
-  className: PropTypes.string,
+  typeTitle: PropTypes.string,
   style: PropTypes.object,
+  className: PropTypes.string,
 }

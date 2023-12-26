@@ -2,6 +2,7 @@ import './Modal.css'
 import { IconX } from '@tabler/icons-react'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
+import { Title } from '../../atoms/title/Title'
 
 export const Modal = ({ showModal, setShowModal, project }) => {
   return (
@@ -14,7 +15,7 @@ export const Modal = ({ showModal, setShowModal, project }) => {
         <IconX className="modal__close" onClick={() => setShowModal(false)} />
 
         <div className="modal__content">
-          <h2 className="project__card--title">{project.name}</h2>
+          <Title tagTitle="h3" title={project.name} typeTitle="tertiary" />
           <img className="project__card--img" src={project.img} alt={project.name} />
           <p className="modal__description">{project.description}</p>
         </div>

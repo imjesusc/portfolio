@@ -8,7 +8,7 @@ export const Footer = ({ info }) => {
   return (
     <footer className="footer">
       <div className="footer__container">
-        <Title tagTitle="h2" title="imjesusc" className="footer__title" />
+        <Title tagTitle="h2" title="imjesusc" typeTitle="secondary" className="footer__title" />
         <nav className="footer__nav">
           {info?.map((item) => (
             <a

@@ -18,6 +18,11 @@
   --text-s-tertiary: 2.5rem;
   --text-s-default: 1.6rem;
 
+  --text-s-dk-title: 8rem;
+  --text-s-dk-subtitle: 4rem;
+  --text-s-dk-tertiary: 2.2rem;
+  --text-s-dk-default: 1.4rem;
+
   /* layouts */
 
   --movile: 76.8rem;
