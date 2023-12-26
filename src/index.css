@@ -17,6 +17,13 @@
   --text-s-subtitle: 4rem;
   --text-s-tertiary: 2.5rem;
   --text-s-default: 1.6rem;
+
+  /* layouts */
+
+  --movile: 76.8rem;
+  --tablet: 1024rem;
+  --laptop: 1280rem;
+  --desktop: 1440rem;
 }
 
 html {
