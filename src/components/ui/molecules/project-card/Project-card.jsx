@@ -18,6 +18,6 @@ export const ProjectCard = ({ project, className }) => {
 }
 
 ProjectCard.propTypes = {
-  project: PropTypes.object.isRequerid,
+  project: PropTypes.object,
   className: PropTypes.string,
 }

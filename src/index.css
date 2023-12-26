@@ -1,7 +1,8 @@
 :root {
   --primary-color: #0070f3;
-  --secondary-color: #fff;
-  --default-color: #000;
+  --color-white: #fff;
+  --color-black: #000;
+  --destructive: #ff0055;
 
   --border-color: #fafafa;
   --color-accent: #eaeaea;
@@ -43,6 +44,6 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--default-color);
+  color: var(--color-base);
   display: block;
 }

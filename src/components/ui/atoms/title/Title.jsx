@@ -1,5 +1,5 @@
-import classNames from 'classnames'
 import './Title.css'
+import classNames from 'classnames'
 import PropTypes from 'prop-types'
 export const Title = ({ tagTitle = '', title = '', className = '', style = {} }) => {
   const Tag = tagTitle || 'h2'

@@ -8,7 +8,9 @@ export const Projects = ({ projects }) => {
     <section className="main__projects">
       <Title tagTitle="h2" title="Mis proyectos" />
       <div className="main__projects--list">
-        {projects && projects.map((project) => <ProjectCard key={project.id} project={project} />)}
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
       </div>
     </section>
   )
