@@ -1,27 +1,37 @@
 import './Footer.css'
-import { IconBrandGithubFilled } from '@tabler/icons-react'
-import { IconBrandLinkedin } from '@tabler/icons-react'
+import { IconBrandGithubFilled, IconBrandLinkedin, IconDownload } from '@tabler/icons-react'
 import { Title } from '../ui/atoms/title/Title'
 import PropTypes from 'prop-types'
+import { ButtonAnimate } from '../ui/atoms/button-animate/Button-animate'
 
 export const Footer = ({ info }) => {
   return (
     <footer className="footer">
       <div className="footer__container">
-        <div>
-          <Title tagTitle="h2" title="imjesusc" />
-        </div>
+        <Title tagTitle="h2" title="imjesusc" className="footer__title" />
         <nav className="footer__nav">
           {info?.map((item) => (
-            <a key={item.id} href={item.url} title={item.name} className="footer__item">
+            <a
+              key={item.id}
+              href={item.url}
+              target="_blank"
+              title={item.name}
+              className="footer__social"
+              rel="noreferrer"
+            >
               {item.name === 'GitHub' ? (
                 <IconBrandGithubFilled className="icon" />
               ) : (
                 <IconBrandLinkedin className="icon" />
               )}
-              <span>{item.name}</span>
+              <span className="footer__social--name">{item.name}</span>
             </a>
           ))}
+
+          <ButtonAnimate to="/resume.pdf" type="file" download>
+            <span>Resume</span>
+            <IconDownload />
+          </ButtonAnimate>
         </nav>
       </div>
     </footer>
