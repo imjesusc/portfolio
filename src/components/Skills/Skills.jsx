@@ -1,19 +1,24 @@
 import './Skills.css'
 import { Title } from '../ui/atoms/title/Title'
-import { BookSkill } from '../ui/atoms/book-skill/Book-skill'
 import PropTypes from 'prop-types'
-export const Skills = ({ skills }) => {
+import { SpriteSvg } from '../ui/atoms/sprite-svg/Sprite-svg.css/Sprite-svg'
+export const Skills = ({ svgSkills }) => {
   return (
     <section className="main__skills">
       <Title tagTitle="h2" title="Habilidades" typeTitle="secondary" />
+      <div className="skill__container">
+        <h4 className="skill__container--title">
+          Me desenvuelvo en <span>JavaScript</span>
+        </h4>
 
-      <div className="skill-container">
-        {skills && skills.map((skill) => <BookSkill key={skill.id} name={skill.name} color={skill.color} />)}
+        {svgSkills.map((svgSkill) => (
+          <SpriteSvg key={svgSkill.id} svgSkill={svgSkill} className="svg__skill" />
+        ))}
       </div>
     </section>
   )
 }
 
 Skills.propTypes = {
-  skills: PropTypes.array.isRequired,
+  svgSkills: PropTypes.array.isRequired,
 }
