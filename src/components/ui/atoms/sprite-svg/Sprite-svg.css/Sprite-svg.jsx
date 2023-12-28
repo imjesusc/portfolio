@@ -5,23 +5,13 @@ import { useRef } from 'react'
 import { useEffect } from 'react'
 import classNames from 'classnames'
 import { useState } from 'react'
+import { formatHsl } from '../../../../../utilities/format-hsl.utilitie'
 export const SpriteSvg = ({ svgSkill, className, fnGetName, ...props }) => {
   const [isHover, setIsHover] = useState(false)
   const requestAnimationFrameRef = useRef(null)
 
-  const hexToRgb = (hex) => {
-    hex = hex.replace(/^#/, '')
-
-    const bigint = parseInt(hex, 16)
-    const r = (bigint >> 16) & 255
-    const g = (bigint >> 8) & 255
-    const b = bigint & 255
-
-    return `${r}, ${g}, ${b}`
-  }
-
   const spriteColorFill = {
-    '--sprite-color': isHover ? `rgba(${hexToRgb(svgSkill.color)}, 0.6)` : '#000',
+    '--sprite-color': isHover ? formatHsl(svgSkill.hslColor, 0.7) : '#000',
   }
 
   const icons = [
@@ -63,7 +53,7 @@ export const SpriteSvg = ({ svgSkill, className, fnGetName, ...props }) => {
         for (let row = 0; row < iconRows; row++) {
           for (let col = 0; col < iconsCols; col++) {
             if (svgSkill.logo[row][col] !== 0 && Math.random() > 0.5) {
-              context.fillStyle = svgSkill.color
+              context.fillStyle = formatHsl(svgSkill.hslColor)
               context.beginPath()
               context.arc(col * pixelSize + centerX, row * pixelSize + centerY, radius, 0, 2 * Math.PI)
               context.fill()
@@ -98,12 +88,10 @@ export const SpriteSvg = ({ svgSkill, className, fnGetName, ...props }) => {
       window.cancelAnimationFrame(requestAnimationFrameRef.current)
     }
   }, [svgSkill, isHover])
-
   const canvasStyles = {
     opacity: isHover ? 1 : 0,
     transition: 'opacity 0.25s ease-out',
   }
-
   return (
     <div
       key={svgSkill.id}
@@ -111,7 +99,7 @@ export const SpriteSvg = ({ svgSkill, className, fnGetName, ...props }) => {
       onMouseEnter={() => {
         setIsHover(true)
         props.setHover(true)
-        fnGetName({ name: svgSkill.name, color: svgSkill.color })
+        fnGetName({ name: svgSkill.name, hslColor: svgSkill.hslColor })
       }}
       onMouseLeave={() => {
         setIsHover(false)

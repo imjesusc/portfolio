@@ -6,11 +6,12 @@ import { SpriteSvg } from '../ui/atoms/sprite-svg/Sprite-svg.css/Sprite-svg'
 import { useState } from 'react'
 import { useRef } from 'react'
 import { useEffect } from 'react'
+import { formatHsl } from '../../utilities/format-hsl.utilitie'
 export const Skills = ({ svgSkills }) => {
-  const [tecnologieName, setTecnologieName] = useState({ name: 'Javascript', color: '#f0db4f' })
+  const [tecnologieName, setTecnologieName] = useState({})
   const [isHover, setIsHover] = useState(false)
-  const getTecnologieName = ({ name, color }) => {
-    setTecnologieName({ name, color })
+  const getTecnologieName = ({ name, hslColor }) => {
+    setTecnologieName({ name, hslColor })
   }
 
   const spanSkill = useRef(null)
@@ -37,15 +38,13 @@ export const Skills = ({ svgSkills }) => {
       <Title tagTitle="h2" title="Habilidades" typeTitle="secondary" />
       <div className="skill__container">
         <h4 className="skill__container--title">
-          Me desenvuelvo en{' '}
+          Tecnologías que uso{' '}
           <span
             className={classNames('hability__skill--name', isHover ? 'new-element' : '')}
-            style={{ color: tecnologieName.color }}
             ref={spanSkill}
+            style={{ '--sprite-name-color': formatHsl(tecnologieName.hslColor) }}
           >
-            <strong className="hability__skill" style={{ color: 'black' }}>
-              Tecnologías
-            </strong>
+            <strong className="hability__skill">{tecnologieName.name ? tecnologieName.name : 'como Front-end.'}</strong>
           </span>
         </h4>
 

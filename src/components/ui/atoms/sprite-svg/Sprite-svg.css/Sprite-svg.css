@@ -16,7 +16,7 @@
   position: relative;
   shape-rendering: crispEdges;
   inset: 0;
-  transition: fill 0.8s ease;
+  transition: fill 400ms ease;
   fill: var(--sprite-color);
 }
 

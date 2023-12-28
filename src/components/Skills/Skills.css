@@ -27,6 +27,7 @@
   height: 100%;
   font-size: 3rem;
   font-weight: 300;
+  font-size: 2rem;
 }
 
 .svg__skill {
@@ -46,6 +47,7 @@
   position: relative;
   transform-style: preserve-3d;
   transition: animation 300s ease;
+  color: var(--sprite-name-color);
 }
 
 .hability__skill--name.new-element {
@@ -56,8 +58,8 @@
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 4rem;
-  transform: rotateX(360deg) translateZ(-4rem);
+  height: 1rem;
+  transform: rotateX(360deg) translateZ(-2rem);
   transform-origin: 50% 0;
   font-weight: 600;
 }
