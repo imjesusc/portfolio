@@ -16,3 +16,9 @@
   flex-direction: column;
   gap: 13.7rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .App__main {
+    gap: 6.8rem;
+  }
+}

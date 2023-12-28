@@ -1,6 +1,6 @@
+import './Projects.css'
 import { Title } from '../ui/atoms/title/Title'
 import { ProjectCard } from '../ui/molecules/project-card/Project-card'
-import './Projects.css'
 import PropTypes from 'prop-types'
 
 export const Projects = ({ projects }) => {

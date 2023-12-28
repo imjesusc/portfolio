@@ -19,3 +19,9 @@
   margin: 0.5rem 0;
   font-size: var(--text-s-default);
 }
+
+@media screen and (max-width: 768px) {
+  .slider__card--img {
+    height: 20rem;
+  }
+}

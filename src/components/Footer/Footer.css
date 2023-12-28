@@ -47,3 +47,25 @@
 .footer__social--name {
   font-weight: bold;
 }
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    display: grid;
+    place-content: center;
+  }
+
+  .footer__container {
+    gap: 2rem;
+    height: max-content;
+  }
+
+  .footer__nav {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .footer__social,
+  .pressBtn {
+    min-height: 5rem;
+  }
+}
