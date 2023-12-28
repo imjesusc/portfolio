@@ -46,7 +46,7 @@ body {
   font-size: var(--text-s-default);
   color: var(--color-base);
   overflow: hidden;
-  overflow-y: auto;
+  overflow-y: var(--toggle-overflow);
 }
 
 ul,

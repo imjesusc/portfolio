@@ -44,7 +44,9 @@ export const Skills = ({ svgSkills }) => {
             ref={spanSkill}
             style={{ '--sprite-name-color': formatHsl(tecnologieName.hslColor) }}
           >
-            <strong className="hability__skill">{tecnologieName.name ? tecnologieName.name : 'como Front-end.'}</strong>
+            <strong className="hability__skill" style={{ color: 'black' }}>
+              {tecnologieName.name && isHover ? tecnologieName.name : 'como Front-end.'}
+            </strong>
           </span>
         </h4>
 

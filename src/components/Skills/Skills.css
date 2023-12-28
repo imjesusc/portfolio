@@ -20,15 +20,13 @@
 .skill__container--title {
   grid-column: 1/3;
   border: 1px solid #e5e8ea;
-  border-radius: 1rem 0 0 1rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   padding: 2rem;
   width: 100%;
   height: 100%;
-  font-size: 3rem;
-  font-weight: 300;
-  font-size: 2rem;
+  font-size: 2.75rem;
 }
 
 .svg__skill {
@@ -37,17 +35,13 @@
   aspect-ratio: 1/1;
   transition: all 0.5s ease;
   border: 1px solid #e5e8ea;
-}
-
-.svg__skill:nth-child(5) {
-  border-radius: 0 1rem 1rem 0;
+  border-radius: 1rem;
 }
 
 .hability__skill--name {
   perspective: 2000rem;
   position: relative;
   transform-style: preserve-3d;
-  transition: animation 300s ease;
   color: var(--sprite-name-color);
 }
 
@@ -82,15 +76,6 @@
 
   .skill__container--title {
     min-height: 9rem;
-    border-radius: 1rem;
-  }
-
-  .svg__skill {
-    border-radius: 1rem;
-  }
-
-  .svg__skill:nth-child(5) {
-    border-radius: 1rem;
   }
 }
 
