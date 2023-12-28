@@ -24,7 +24,6 @@ export const ButtonAnimate = ({ btnType, type, to, children, ...props }) => {
     <a
       href={to}
       type={type}
-      target="_blank"
       className={classNames('pressBtn', `btn__${btnType}`)}
       onClick={pressButton}
       rel="noreferrer"

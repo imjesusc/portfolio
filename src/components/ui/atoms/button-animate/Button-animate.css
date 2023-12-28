@@ -15,6 +15,7 @@
   position: relative;
   cursor: pointer;
   transition: opacity 300ms ease-in-out;
+  user-select: none;
 }
 
 .pressBtn:hover {

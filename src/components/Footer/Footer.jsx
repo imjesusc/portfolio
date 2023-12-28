@@ -1,8 +1,9 @@
 import './Footer.css'
-import { IconBrandGithubFilled, IconBrandLinkedin, IconDownload } from '@tabler/icons-react'
+import { IconBrandGithubFilled, IconBrandLinkedin } from '@tabler/icons-react'
 import { Title } from '../ui/atoms/title/Title'
 import PropTypes from 'prop-types'
 import { ButtonAnimate } from '../ui/atoms/button-animate/Button-animate'
+import { IconFileDownload } from '@tabler/icons-react'
 
 export const Footer = ({ info }) => {
   return (
@@ -30,7 +31,7 @@ export const Footer = ({ info }) => {
 
           <ButtonAnimate to="/resume.pdf" type="file" download>
             <span>Resume</span>
-            <IconDownload />
+            <IconFileDownload />
           </ButtonAnimate>
         </nav>
       </div>

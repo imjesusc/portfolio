@@ -8,7 +8,16 @@ export const ProjectCard = ({ project, className }) => {
   const [showModal, setShowModal] = useState(false)
 
   useEffect(() => {
-    document.body.style.setProperty('--toggle-overflow', showModal ? 'hidden' : 'auto')
+    const body = document.body
+
+    if (showModal) {
+      const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth
+      body.style.setProperty('--toggle-overflow', 'hidden')
+      body.style.paddingRight = `${scrollBarWidth}px`
+    } else {
+      body.style.setProperty('--toggle-overflow', 'auto')
+      body.style.paddingRight = '0'
+    }
   }, [showModal])
 
   return (
