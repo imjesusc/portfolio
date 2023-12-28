@@ -7,7 +7,7 @@ import { IconSquareRoundedChevronRight } from '@tabler/icons-react'
 export const Projects = ({ projects }) => {
   return (
     <section className="main__projects">
-      <Title tagTitle="h2" title="Proyectos" typeTitle="secondary" />
+      <Title tagTitle="h2" title="Proyectos" typeTitle="secondary" className="main__projects--title" />
       <div className="main__projects--list">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />

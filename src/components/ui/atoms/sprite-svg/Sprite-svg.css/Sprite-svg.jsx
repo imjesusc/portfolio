@@ -109,7 +109,7 @@ export const SpriteSvg = ({ svgSkill, className }) => {
         <canvas className="sprite__canvas" ref={canvas} style={canvasStyles}></canvas>
       </div>
 
-      <strong>{svgSkill.name}</strong>
+      <strong className="sprite__name">{svgSkill.name}</strong>
     </div>
   )
 }

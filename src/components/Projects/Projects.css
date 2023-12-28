@@ -12,7 +12,7 @@
 }
 
 .main__projects--title {
-  font-size: 4rem;
+  color: var(--color-black);
 }
 
 .main__projects--list {

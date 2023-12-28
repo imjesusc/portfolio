@@ -5,7 +5,7 @@ export const Header = () => {
     <header className="main-header">
       <Title tagTitle="h1" title="Iamjesusc" typeTitle="primary" />
       <div>
-        <p className="main-header-info">Desarrollador front-end con experiencia de 1 año.</p>
+        <p className="main-header-info">Desarrollador Front-end con experiencia de 1 año.</p>
         <p className="main-header-info">Entusiasta con la codificación y las nuevas tecnologías.</p>
       </div>
     </header>

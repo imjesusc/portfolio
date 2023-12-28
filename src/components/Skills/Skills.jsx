@@ -1,5 +1,4 @@
 import './Skills.css'
-import classNames from 'classnames'
 import { Title } from '../ui/atoms/title/Title'
 import PropTypes from 'prop-types'
 import { SpriteSvg } from '../ui/atoms/sprite-svg/Sprite-svg.css/Sprite-svg'
@@ -7,10 +6,10 @@ import { SpriteSvg } from '../ui/atoms/sprite-svg/Sprite-svg.css/Sprite-svg'
 export const Skills = ({ svgSkills }) => {
   return (
     <section className="main__skills">
-      <Title tagTitle="h2" title="Habilidades" typeTitle="secondary" />
+      <Title tagTitle="h2" title="Habilidades" typeTitle="secondary" className="main__skills--title" />
       <div className="skill__container">
         <h4 className="skill__container--title">
-          Tecnologías que uso <span className={classNames('hability__skill--name')}>como Front-end.</span>
+          Tecnologías que uso <span>como Front-end.</span>
         </h4>
 
         {svgSkills.map((svgSkill) => (

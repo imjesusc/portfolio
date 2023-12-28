@@ -27,3 +27,7 @@
   z-index: 1;
   opacity: 1;
 }
+
+.sprite__name {
+  color: var(--color-foreground);
+}

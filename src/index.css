@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'font-sans';
+  src: url('../public/font-sans.woff2') format('woff');
+}
+
 :root {
   --primary-color: #0070f3;
   --color-white: #fff;
@@ -13,7 +18,7 @@
 
   --max-screen-width: 1280px;
   --text-s-primary: 2rem;
-  --text-s-title: 9.6rem;
+  --text-s-title: 12.8rem;
   --text-s-subtitle: 4rem;
   --text-s-tertiary: 2.5rem;
   --text-s-default: 1.6rem;
@@ -39,7 +44,7 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: system-ui, -apple-system;
+  font-family: 'font-sans', system-ui, -apple-system;
 }
 
 body {
