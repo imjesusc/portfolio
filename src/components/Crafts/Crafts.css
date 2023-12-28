@@ -11,10 +11,23 @@
   max-width: var(--max-screen-width);
   margin: auto;
   width: 100%;
+  padding: 0 1rem;
 }
 
 @media only screen and (max-width: 1440px) {
   .main__craft--title {
     max-width: 120rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .main__craft--title {
+    padding: 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main__craft--title {
+    padding: 1rem;
   }
 }

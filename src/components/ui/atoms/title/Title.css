@@ -35,3 +35,9 @@
     line-height: 1;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .title__primary {
+    font-size: 6.5rem;
+  }
+}

@@ -2,6 +2,7 @@ import './Projects.css'
 import { Title } from '../ui/atoms/title/Title'
 import { ProjectCard } from '../ui/molecules/project-card/Project-card'
 import PropTypes from 'prop-types'
+import { IconSquareRoundedChevronRight } from '@tabler/icons-react'
 
 export const Projects = ({ projects }) => {
   return (
@@ -11,6 +12,15 @@ export const Projects = ({ projects }) => {
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
+        <a
+          className="more__projects"
+          href="https://github.com/imjesusc"
+          target="_blank"
+          rel="noreferrer"
+          title="Más proyectos."
+        >
+          <IconSquareRoundedChevronRight className="more__projects--icon" />
+        </a>
       </div>
     </section>
   )
