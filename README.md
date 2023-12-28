@@ -2,7 +2,7 @@
 
 [Watch live](https://repo-delta-ruddy.vercel.app/)
 
-[![Vercel production deploy](https://github.com/imjesusc/portfolio/actions/workflows/production.yaml/badge.svg)](https://github.com/imjesusc/portfolio/actions/workflows/production.yaml)
+[![Vercel production deploy](https://github.com/imjesusc/portfolio.dev/actions/workflows/production.yaml/badge.svg)](https://github.com/imjesusc/portfolio.dev/actions/workflows/production.yaml)
 
 ## Introduction
 
