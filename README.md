@@ -33,6 +33,20 @@ This is my personal portfolio.
 1. **Flowchart**  
    ![FlowChart](./public/flowchard.png)
 
-2. **Sketches**  
+2. **Bocetos**
+   <div style="display: flex; height: 800px; gap: 20px">
    <img width="60%" src="./public/sketch.png" />
    <img width="30%" src="./public/sketch-movile.png" />
+   </div>
+
+**Process**
+
+1. Change in the design of the skills section.
+   ![Changes](./public/changes.png)
+
+**Avances**
+
+   <div style="display: flex; height: 600px; gap: 20px">
+   <img width="70%" src="./public/advanced.png" />
+   <img width="20%" src="./public/advanced-m.png" />
+   </div>

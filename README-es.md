@@ -33,6 +33,20 @@ Este es mi portafolio de personal.
 1. **Diagrama de flujo**  
    ![FlowChart](./public/flowchard.png)
 
-2. **Bocetos**  
+2. **Bocetos**
+   <div style="display: flex; height: 800px; gap: 20px">
    <img width="60%" src="./public/sketch.png" />
    <img width="30%" src="./public/sketch-movile.png" />
+   </div>
+
+**Proceso**
+
+1. Cambio en el diseño de la sección de habilidades
+   ![Changes](./public/changes.png)
+
+**Avances**
+
+   <div style="display: flex; height: 600px; gap: 20px">
+   <img width="70%" src="./public/advanced.png" />
+   <img width="20%" src="./public/advanced-m.png" />
+   </div>
