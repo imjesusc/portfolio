@@ -5,7 +5,7 @@ import { useRef } from 'react'
 import { useEffect } from 'react'
 import classNames from 'classnames'
 import { useState } from 'react'
-export const SpriteSvg = ({ svgSkill, className }) => {
+export const SpriteSvg = ({ svgSkill, className, fnGetName, ...props }) => {
   const [isHover, setIsHover] = useState(false)
   const requestAnimationFrameRef = useRef(null)
 
@@ -110,9 +110,12 @@ export const SpriteSvg = ({ svgSkill, className }) => {
       className={classNames(className)}
       onMouseEnter={() => {
         setIsHover(true)
+        props.setHover(true)
+        fnGetName({ name: svgSkill.name, color: svgSkill.color })
       }}
       onMouseLeave={() => {
         setIsHover(false)
+        props.setHover(false)
       }}
     >
       <div className="sprite__container">
@@ -126,4 +129,6 @@ export const SpriteSvg = ({ svgSkill, className }) => {
 SpriteSvg.propTypes = {
   svgSkill: PropTypes.object.isRequired,
   className: PropTypes.string,
+  fnGetName: PropTypes.func,
+  setHover: PropTypes.func,
 }
