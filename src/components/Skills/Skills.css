@@ -13,17 +13,20 @@
   width: 100%;
   border-radius: 1rem;
   overflow: hidden;
+  gap: 2rem;
 }
 
 .skill__container--title {
   grid-column: 1/3;
   border: 1px solid #e5e8ea;
   border-radius: 1rem 0 0 1rem;
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
   width: 100%;
   height: 100%;
   font-size: 3rem;
+  font-weight: 300;
 }
 
 .svg__skill {
@@ -36,6 +39,37 @@
 
 .svg__skill:nth-child(5) {
   border-radius: 0 1rem 1rem 0;
+}
+
+.hability__skill--name {
+  perspective: 2000rem;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: animation 300s ease;
+}
+
+.hability__skill--name.new-element {
+  animation: workRotate 200ms ease-in-out 1 forwards;
+}
+
+.hability__skill {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 4rem;
+  transform: rotateX(360deg) translateZ(-4rem);
+  transform-origin: 50% 0;
+  font-weight: 600;
+}
+
+@keyframes workRotate {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(90deg);
+  }
 }
 
 @media only screen and (max-width: 1440px) {
