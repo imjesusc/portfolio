@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 import classNames from 'classnames'
 import { useState } from 'react'
 import { formatHsl } from '../../../../../utilities/format-hsl.utilitie'
-export const SpriteSvg = ({ svgSkill, className, fnGetName, ...props }) => {
+export const SpriteSvg = ({ svgSkill, className }) => {
   const [isHover, setIsHover] = useState(false)
   const requestAnimationFrameRef = useRef(null)
 
@@ -88,6 +88,7 @@ export const SpriteSvg = ({ svgSkill, className, fnGetName, ...props }) => {
       window.cancelAnimationFrame(requestAnimationFrameRef.current)
     }
   }, [svgSkill, isHover])
+
   const canvasStyles = {
     opacity: isHover ? 1 : 0,
     transition: 'opacity 0.25s ease-out',
@@ -98,18 +99,17 @@ export const SpriteSvg = ({ svgSkill, className, fnGetName, ...props }) => {
       className={classNames(className)}
       onMouseEnter={() => {
         setIsHover(true)
-        props.setHover(true)
-        fnGetName({ name: svgSkill.name, hslColor: svgSkill.hslColor })
       }}
       onMouseLeave={() => {
         setIsHover(false)
-        props.setHover(false)
       }}
     >
       <div className="sprite__container">
         {skillIcon.icon}
         <canvas className="sprite__canvas" ref={canvas} style={canvasStyles}></canvas>
       </div>
+
+      <strong>{svgSkill.name}</strong>
     </div>
   )
 }
@@ -117,6 +117,4 @@ export const SpriteSvg = ({ svgSkill, className, fnGetName, ...props }) => {
 SpriteSvg.propTypes = {
   svgSkill: PropTypes.object.isRequired,
   className: PropTypes.string,
-  fnGetName: PropTypes.func,
-  setHover: PropTypes.func,
 }
