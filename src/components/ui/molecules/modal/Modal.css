@@ -69,4 +69,9 @@
     padding: 1rem;
     right: -100vw;
   }
+
+  .modal-active {
+    transition: right 200ms ease-in-out;
+    right: 0;
+  }
 }
