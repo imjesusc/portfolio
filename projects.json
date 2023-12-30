@@ -31,13 +31,14 @@
   "crafts": [
     {
       "id": "1",
-      "name": "Calculadora React",
-      "img": "./card.webp",
-      "path": "https://github.com/TuUsuario/CalculadoraReact",
-      "description": "Una calculadora implementada en React para realizar operaciones matemáticas básicas.",
-      "repo": "https://github.com/TuUsuario/CalculadoraReact",
-      "technologies": ["React", "JavaScript", "CSS"]
+      "name": "Comparador de Imágenes",
+      "img": "./compare.webp",
+      "repo": "https://github.com/crafts-monorepo/projects/compare",
+      "description": "Una herramienta para comparar imágenes y resaltar diferencias. Útil para análisis de cambios visuales.",
+      "technologies": ["JavaScript", "HTML", "CSS"],
+      "path": "https://compare-ui.netlify.app/"
     },
+
     {
       "id": "2",
       "name": "Lista de Tareas Angular",
