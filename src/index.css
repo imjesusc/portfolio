@@ -52,6 +52,7 @@ body {
   color: var(--color-base);
   overflow: hidden;
   overflow-y: var(--toggle-overflow);
+  scroll-behavior: smooth;
 }
 
 ul,
