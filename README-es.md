@@ -33,7 +33,21 @@ Este es mi portafolio de personal.
 1. **Diagrama de flujo**  
    ![FlowChart](./public/flowchard.png)
 
-2. **Bocetos**
+2. **Files structure**
+   Mi proyecto sigue la estructura de archivos basado en la metodología Atomic Design.
+
+   - src
+     - assets
+     - components
+       - atoms
+       - molecules
+       - organisms
+     - styles
+       - global.css
+     - hooks
+     - utilities
+
+3. **Bocetos**
    <div style="display: flex; height: 800px; gap: 20px">
    <img width="60%" src="./public/sketch.png" />
    <img width="30%" src="./public/sketch-movile.png" />

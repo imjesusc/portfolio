@@ -33,7 +33,19 @@ This is my personal portfolio.
 1. **Flowchart**  
    ![FlowChart](./public/flowchard.png)
 
-2. **Bocetos**
+2. **Files structure**
+   My project adheres to the file structure based on Atomic Design principles.
+   - src
+     - assets
+     - components
+       - atoms
+       - molecules
+       - organisms
+     - styles
+       - global.css
+     - hooks
+     - utilities
+3. **Bocetos**
    <div style="display: flex; height: 800px; gap: 20px">
    <img width="60%" src="./public/sketch.png" />
    <img width="30%" src="./public/sketch-movile.png" />
