@@ -35,8 +35,9 @@ This is my personal portfolio.
 
 2. **Files structure**
    My project adheres to the file structure based on Atomic Design principles.
+
+   - public
    - src
-     - assets
      - components
        - atoms
        - molecules
@@ -45,6 +46,7 @@ This is my personal portfolio.
        - global.css
      - hooks
      - utilities
+
 3. **Bocetos**
    <div style="display: flex; height: 800px; gap: 20px">
    <img width="60%" src="./public/sketch.png" />

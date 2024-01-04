@@ -65,6 +65,11 @@ export const useCarousel = (wrapperRef = null, carruselRef = null, cardRef = nul
 
     originalItems.forEach((item) => {
       const duplicateItem = item.cloneNode(true)
+      if (originalItems.length <= 3) {
+        const secondaryDuplicateItem = item.cloneNode(true)
+        secondaryDuplicateItem.classList.add('secondary-duplicate-item')
+        duplicateItem.appendChild(secondaryDuplicateItem)
+      }
       duplicateItem.setAttribute('aria-hidden', true)
       carruselRef.current.appendChild(duplicateItem)
     })

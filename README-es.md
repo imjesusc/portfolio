@@ -36,8 +36,8 @@ Este es mi portafolio de personal.
 2. **Files structure**
    Mi proyecto sigue la estructura de archivos basado en la metodología Atomic Design.
 
+   - public
    - src
-     - assets
      - components
        - atoms
        - molecules

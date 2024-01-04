@@ -32,7 +32,7 @@ export const CraftsCarrusel = ({ crafts }) => {
       </span>
       <ul
         className={classNames(
-          'grid grid-flow-col max-h-[300px]',
+          'grid grid-flow-col overflow-hidden max-h-[300px]',
           'gap-4 overflow-x-auto',
           'snap-x scroll-smooth',
           'auto-cols-[100%]',
