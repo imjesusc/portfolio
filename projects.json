@@ -2,30 +2,43 @@
   "projects": [
     {
       "id": "1",
-      "name": "Clone de Tesla",
       "img": "./card.webp",
-      "path": "https://github.com/Portfolio-Website/Portfolio-Website",
       "description": "Portfolio website created using React and Vite",
-      "repo": "https://github.com/Portfolio-Website/Portfolio-Website",
-      "tecnologies": ["React", "Vite", "Tailwind"]
-    },
-    {
-      "id": "3",
-      "name": "Get Ip Info",
-      "img": "./card.webp",
-      "path": "https://github.com/Portfolio-Website/Portfolio-Website",
-      "description": "Portfolio website created using React and Vite",
-      "repo": "https://github.com/Portfolio-Website/Portfolio-Website",
-      "tecnologies": ["React", "Vite", "Tailwind"]
+      "repository": "https://github.com/Portfolio-Website/Portfolio-Website",
+      "tecnologies": [
+        { "name": "Next.js", "color": "0,0%,0%", "id": "1" },
+        { "name": "Tailwind", "color": "198,93%,60%", "id": "2" },
+        { "name": "JavaScript", "color": "53,93%,54%", "id": "3" }
+      ],
+      "title": "Comparador de Tarjetas",
+      "demo": "https://github.com/Portfolio-Website/Portfolio-Website"
     },
     {
       "id": "2",
-      "name": "Encriptador de texto",
-      "img": "./card.webp",
-      "path": "https://github.com/Portfolio-Website/Portfolio-Website",
+      "img": "./advanced.png",
       "description": "Portfolio website created using React and Vite",
-      "repo": "https://github.com/Portfolio-Website/Portfolio-Website",
-      "tecnologies": ["React", "Vite", "Tailwind"]
+      "repository": "https://github.com/Portfolio-Website/Portfolio-Website",
+      "tecnologies": [
+        { "name": "Next.js", "color": "0,0%,0%", "id": "1" },
+        { "name": "Tailwind", "color": "198,93%,60%", "id": "2" },
+        { "name": "JavaScript", "color": "53,93%,54%", "id": "3" },
+        { "name": "React", "color": "198,100%,33%", "id": "4" }
+      ],
+      "title": "Clone de Tesla",
+      "demo": "https://github.com/Portfolio-Website/Portfolio-Website"
+    },
+    {
+      "id": "3",
+      "img": "./compare.webp",
+      "description": "Portfolio website created using React and Vite",
+      "repository": "https://github.com/Portfolio-Website/Portfolio-Website",
+      "tecnologies": [
+        { "name": "Next.js", "color": "0,0%,0%", "id": "1" },
+        { "name": "Tailwind", "color": "198,93%,60%", "id": "2" },
+        { "name": "JavaScript", "color": "53,93%,54%", "id": "3" }
+      ],
+      "title": "Location Finder",
+      "demo": "https://github.com/Portfolio-Website/Portfolio-Website"
     }
   ],
   "crafts": [
@@ -66,6 +79,11 @@
       "id": "2",
       "name": "LinkedIn",
       "url": "https://www.linkedin.com/in/imjesusc/"
+    },
+    {
+      "id": "3",
+      "name": "Email",
+      "url": "imjesus.ds@gmail.com"
     }
   ],
   "svgSkills": [
