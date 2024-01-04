@@ -1,29 +1,54 @@
-import './Sprite-svg.css'
-import { IconJs, IconNextJs, IconReact, IconTailwild } from '../../../icons'
 import PropTypes from 'prop-types'
 import { useRef } from 'react'
 import { useEffect } from 'react'
 import classNames from 'classnames'
 import { useState } from 'react'
-import { formatHsl } from '../../../../../utilities/format-hsl.utilitie'
-export const SpriteSvg = ({ svgSkill, className }) => {
+import { formatHsl } from '../../utilities/format-hsl.utilitie'
+import { IconJs, IconNextJs, IconReact, IconTailwild } from './icons'
+export const SkillSvg = ({ svgSkill, className }) => {
   const [isHover, setIsHover] = useState(false)
   const requestAnimationFrameRef = useRef(null)
 
   const spriteColorFill = {
-    '--sprite-color': isHover ? formatHsl(svgSkill.hslColor, 0.7) : '#000',
+    '--sprite-color': isHover ? formatHsl(svgSkill.hslColor, 0.7) : '#00000',
   }
 
   const icons = [
-    { id: '2', icon: <IconReact className="sprite__skill" style={spriteColorFill} /> },
+    {
+      id: '2',
+      icon: (
+        <IconReact
+          className={classNames('w-full h-full relative transition-colors duration-400 ease', 'fill-[--sprite-color]')}
+          style={spriteColorFill}
+        />
+      ),
+    },
     {
       id: '1',
-      icon: <IconNextJs className="sprite__skill" style={spriteColorFill} />,
+      icon: (
+        <IconNextJs
+          className={classNames('w-full h-full relative transition-colors duration-400 ease', 'fill-[--sprite-color]')}
+          style={spriteColorFill}
+        />
+      ),
     },
-    { id: '3', icon: <IconJs className="sprite__skill" style={spriteColorFill} /> },
+    {
+      id: '3',
+      icon: (
+        <IconJs
+          className={classNames('w-full h-full relative transition-colors duration-400 ease', 'fill-[--sprite-color]')}
+          style={spriteColorFill}
+        />
+      ),
+    },
     {
       id: '4',
-      icon: <IconTailwild className="sprite__skill" style={spriteColorFill} />,
+      icon: (
+        <IconTailwild
+          className={classNames('w-full h-full relative transition-colors duration-400 ease', 'fill-[--sprite-color]')}
+          style={spriteColorFill}
+        />
+      ),
     },
   ]
 
@@ -82,21 +107,38 @@ export const SpriteSvg = ({ svgSkill, className }) => {
       updateCanvas()
     }
 
+    const resetCanvas = () => {
+      const canvasElement = canvas.current
+      const context = canvasElement.getContext('2d')
+
+      canvasElement.style.transition = 'opacity 1s ease-out'
+
+      canvasElement.style.opacity = 0
+
+      setTimeout(() => {
+        context.clearRect(0, 0, canvasElement.width, canvasElement.height)
+        window.cancelAnimationFrame(requestAnimationFrameRef.current)
+        canvasElement.style.transition = 'none'
+        canvasElement.style.opacity = 1
+      }, 1000)
+    }
+
     if (isHover) {
       renderAnimation()
     } else {
+      resetCanvas()
       window.cancelAnimationFrame(requestAnimationFrameRef.current)
     }
   }, [svgSkill, isHover])
 
   const canvasStyles = {
-    opacity: isHover ? 1 : 0,
+    opacity: isHover ? 1 : 1,
     transition: 'opacity 0.25s ease-out',
   }
   return (
     <div
       key={svgSkill.id}
-      className={classNames(className)}
+      className={classNames('gap-2', className)}
       onMouseEnter={() => {
         setIsHover(true)
       }}
@@ -104,17 +146,17 @@ export const SpriteSvg = ({ svgSkill, className }) => {
         setIsHover(false)
       }}
     >
-      <div className="sprite__container">
+      <div className="grid place-content-center w-[48px] h-[48px] relative">
         {skillIcon.icon}
-        <canvas className="sprite__canvas" ref={canvas} style={canvasStyles}></canvas>
+        <canvas className="w-full h-full absolute z-10 opacity-1" ref={canvas} style={canvasStyles}></canvas>
       </div>
 
-      <strong className="sprite__name">{svgSkill.name}</strong>
+      <span className="text-center text-[--muted-foreground]">{svgSkill.name}</span>
     </div>
   )
 }
 
-SpriteSvg.propTypes = {
+SkillSvg.propTypes = {
   svgSkill: PropTypes.object.isRequired,
   className: PropTypes.string,
 }
