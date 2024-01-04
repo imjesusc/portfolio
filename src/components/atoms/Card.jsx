@@ -11,7 +11,7 @@ export const Card = ({ title, description, tecnologies, img, repository, demo, c
       className={classNames('rounded-2xl overflow-hidden relative group', 'border-2  border-[--border]', className)}
     >
       <figure className="h-[245px] group-hover:opacity-10 transition-opacity duration-300 opacity-50">
-        <img className="w-full h-full object-cover" src={img} alt={title} />
+        <img className="w-full h-full object-cover" src={img} alt={title} loading="lazy" />
       </figure>
       <div
         className={classNames(

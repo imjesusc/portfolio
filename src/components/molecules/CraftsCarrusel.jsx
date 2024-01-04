@@ -59,6 +59,7 @@ export const CraftsCarrusel = ({ crafts }) => {
                     src={craft.img}
                     alt={craft.name}
                     draggable={false}
+                    loading="lazy"
                   />
                 </figure>
                 <figcaption className="my-1 text-base text-[--muted-foreground]" draggable={false}>
