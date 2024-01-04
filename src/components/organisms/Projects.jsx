@@ -10,10 +10,10 @@ export const Projects = ({ projects }) => {
       <div
         className={classNames('grid grid-cols-1', 'm-auto w-full', 'tablet:grid-cols-2 gap-4', 'laptop:grid-cols-3')}
       >
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <Suspense key={project.id} fallback={<div>Loading...</div>}>
             <Card
-              key={project.id}
+              index={index}
               img={project.img}
               title={project.title}
               description={project.description}

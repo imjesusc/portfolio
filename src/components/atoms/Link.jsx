@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
 
-export const Link = ({ type, href, target, isDownload, className, children }) => {
+export const Link = ({ type, href, target, isDownload, className, children, ...props }) => {
   const styles = {
     primary: 'px-2 py-1 border flex cursor-pointer items-center text-base',
     secondary: 'hover:underline  flex cursor-pointer items-center text-base',
@@ -41,6 +41,7 @@ export const Link = ({ type, href, target, isDownload, className, children }) =>
       download={isDownload}
       onClick={pressAnimation}
       target={target}
+      {...props}
     >
       {children}
     </a>
@@ -55,4 +56,5 @@ Link.propTypes = {
   children: PropTypes.node,
   target: PropTypes.string,
   isDownload: PropTypes.bool,
+  title: PropTypes.string,
 }
