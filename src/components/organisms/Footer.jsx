@@ -10,7 +10,7 @@ export const Footer = ({ info }) => {
           <Title title="imjesusc" type="tertiary" className="font-medium leading-none" />
           <p className="text-sm text-[--text-accent]">© 2023</p>
         </div>
-        <div className="grid tablet:flex gap-y-4 justify-between w-full">
+        <div className="flex flex-col tablet:flex-row gap-y-4 justify-between w-full">
           <LinkColumns info={info} />
           <Link
             type="animate"

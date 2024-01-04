@@ -53,12 +53,17 @@ export const CraftsCarrusel = ({ crafts }) => {
               draggable={false}
             >
               <article className={classNames('w-full h-full overflow-hidden rounded-xl')} draggable={false}>
-                <figure className="w-full h-auto " draggable={false}>
-                  <img className="w-full h-[230px] rounded-2xl" src={craft.img} alt={craft.name} draggable={false} />
-                  <figcaption className="my-1 text-base text-[--muted-foreground]" draggable={false}>
-                    {craft.name}
-                  </figcaption>
+                <figure className="w-full h-[230px]" draggable={false}>
+                  <img
+                    className="w-full h-full object-cover rounded-2xl"
+                    src={craft.img}
+                    alt={craft.name}
+                    draggable={false}
+                  />
                 </figure>
+                <figcaption className="my-1 text-base text-[--muted-foreground]" draggable={false}>
+                  {craft.name}
+                </figcaption>
               </article>
             </li>
           ))}

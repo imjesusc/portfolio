@@ -19,8 +19,7 @@ export const Badge = ({ text, iconId, className }) => {
       className={classNames(
         'rounded-full px-3 font-medium text-sm py-1',
         'flex gap-2 items-center justify-center w-auto max-h-[30px]',
-        'bg-[--primary-foreground] border border-[--primary-foreground] hover:bg-[--destructive-foreground] text-sm text-[--foreground]',
-        'bg-white/50',
+        'bg-[--muted] border border-[--primary] transition-colors duration-500 hover:bg-[--destructive-foreground] text-sm text-[--primary]',
         className,
       )}
     >

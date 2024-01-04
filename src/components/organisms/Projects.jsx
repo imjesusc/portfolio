@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 export const Projects = ({ projects }) => {
   return (
-    <section className="p-4 grid gap-4 tablet:max-w-[--max-w-screen] m-auto">
+    <section className="p-4 grid gap-4 w-full max-w-[--max-w-screen] m-auto">
       <Title type="secondary" title="Proyectos" className="font-semibold" />
 
       <div className={classNames('grid-cols-1', 'm-auto grid', 'tablet:grid-cols-2 gap-4', 'laptop:grid-cols-3')}>

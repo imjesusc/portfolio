@@ -18,7 +18,7 @@ export const Card = ({ title, description, tecnologies, img, repository, demo, c
           'absolute z-10 top-0 left-0 w-full h-full',
           'translate-y-[50%] group-hover:translate-y-0 transition-transform duration-300',
           'bg-gradient-to-t from-white to-white/0  group-hover:to-white/10',
-          'px-10 py-3 flex flex-col gap-2',
+          'p-4 flex flex-col gap-2',
         )}
       >
         <div className="absolute bottom-3 right-3  gap-3 items-center flex h-auto">
@@ -38,16 +38,14 @@ export const Card = ({ title, description, tecnologies, img, repository, demo, c
           </Link>
         </div>
 
-        <div className=" flex flex-col gap-1.5">
-          <Title type="tertiary" title={title} className="font-semibold  text-[--foreground]" />
-
-          <div className="flex gap-2 flex-wrap">
-            {tecnologies &&
-              tecnologies.map((tec) => <Badge key={tec.id} text={tec.name} color={tec.color} iconId={tec.id} />)}
-          </div>
-        </div>
+        <Title type="tertiary" title={title} className="font-semibold  text-[--foreground]" />
 
         <p className="text-base text-balance text-[--muted-foreground] font-medium">{description}</p>
+
+        <div className="flex gap-2 flex-wrap">
+          {tecnologies &&
+            tecnologies.map((tec) => <Badge key={tec.id} text={tec.name} color={tec.color} iconId={tec.id} />)}
+        </div>
       </div>
     </article>
   )
